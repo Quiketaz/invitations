@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Party Invitation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom animations for the invitation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0; /* Ensure it starts hidden */
+        }
+        .animation-delay-200 { animation-delay: 0.2s; }
+        .animation-delay-400 { animation-delay: 0.4s; }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-slide-up {
+            animation: slideUp 0.7s ease-out forwards;
+            opacity: 0; /* Ensure it starts hidden */
+            animation-delay: 0.3s; /* Delay after initial fade-in */
+        }
+
+        /* Applying the Inter font globally */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-blue-800 to-red-700 flex items-center justify-center p-4 text-gray-800">
+    <div class="bg-white p-8 md:p-12 rounded-xl shadow-2xl max-w-md w-full text-center transform transition-all duration-300 hover:scale-105">
+        <!-- Texas Star Icon - Visual Element (Suggestion 2) -->
+        <div class="mb-6 animate-fade-in">
+            <svg class="mx-auto w-20 h-20 text-red-700" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 .587l3.64 7.553 8.36 1.215-6.04 5.892 1.42 8.322L12 18.295l-7.38 3.874 1.42-8.322-6.04-5.892 8.36-1.215L12 .587z"/>
+            </svg>
+        </div>
+
+        <!-- Party Title -->
+        <h1 class="text-4xl md:text-5xl font-extrabold text-red-800 mb-4 animate-fade-in">
+            Welcome Party!
+        </h1>
+
+        <!-- Welcome Message -->
+        <p class="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed animate-fade-in animation-delay-200">
+            Howdy, friends! Come celebrate Yaremi's move to Texas with us! <!-- Updated with sister's name -->
+            <br>
+            Feel free to bring your favorite dish to share!
+        </p>
+
+        <!-- Party Details -->
+        <div class="bg-blue-50 p-6 rounded-lg mb-8 shadow-inner animate-slide-up">
+            <p class="text-xl md:text-2xl font-bold text-blue-800 mb-2">
+                📅 Saturday, July 12th
+            </p>
+            <p class="text-xl md:text-2xl font-bold text-blue-800 mb-2">
+                ⏰ 6:30 PM
+            </p>
+            <p class="text-md md:text-lg text-gray-600">
+                📍 27206 Cotton View Ln, Katy TX
+                <br>
+                <!-- Link to Google Maps for the address -->
+                <a href="https://maps.google.com/?q=27206+Cotton+View+Ln,+Katy+TX" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
+                  (View on Map)
+                </a>
+                <br>
+                <!-- Link to Google Calendar event -->
+                <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NjBvMzhwYjVjZ3BqMGI5ajZsajYyYjlrNjFoNjJiOXA2MHJqaWI5b2NrcWo0cDloY2hpNjJjajM3MCBmYW1pbHkwNzE5NDkzOTkwNTY5NTU2MTUxM0Bn&tmsrc=family07194939905695561513%40group.calendar.google.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
+                    (Add to Google Calendar)
+                </a>
+            </p>
+        </div>
+
+        <!-- RSVP Section -->
+        <div class="animate-fade-in animation-delay-400">
+            <p class="text-md md:text-lg text-gray-700 mb-4">
+                Kindly RSVP by texting:
+            </p>
+            <button
+                id="rsvpButton"
+                class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center mx-auto focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+            >
+                📞 832-674-5401 (Copy Number)
+                <!-- Phone icon SVG -->
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="ml-2"
+                >
+                    <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
+                    <path d="M15 9l-4 4"></path>
+                    <path d="M16 10l-2 2"></path>
+                </svg>
+            </button>
+            <p id="message" class="mt-2 text-sm text-green-600 font-semibold transition-opacity duration-300 hidden">
+                Number copied!
+            </p>
+            <!-- New CTA for direct SMS (Suggestion 4) -->
+            <a href="sms:8326745401" class="inline-block mt-4 text-blue-600 hover:text-blue-800 hover:underline text-sm font-semibold">
+                Or Text Now!
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const rsvpButton = document.getElementById('rsvpButton');
+            const messageElement = document.getElementById('message');
+            const rsvpNumber = '832-674-5401'; // Define the number here
+
+            rsvpButton.addEventListener('click', function() {
+                // Create a temporary textarea element to copy the text
+                const el = document.createElement('textarea');
+                el.value = rsvpNumber;
+                document.body.appendChild(el);
+                el.select();
+                try {
+                    document.execCommand('copy');
+                    messageElement.textContent = 'Number copied!';
+                    messageElement.classList.remove('hidden');
+                } catch (err) {
+                    messageElement.textContent = 'Failed to copy number. Please copy manually: ' + rsvpNumber;
+                    messageElement.classList.remove('hidden');
+                }
+                document.body.removeChild(el);
+
+                // Hide the message after 2 seconds
+                setTimeout(() => {
+                    messageElement.classList.add('hidden');
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
