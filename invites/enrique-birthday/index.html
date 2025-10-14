@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Invitation</title>
+    <!-- Load Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Ensures the text uses a modern, readable font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-950 min-h-screen flex items-center justify-center p-4">
+
+    <!-- Invitation Card Container: Central element with dark background and shadow.
+         Color scheme changed to high-tech Blue/Cyan. -->
+    <div class="w-full max-w-lg bg-gray-900 p-8 sm:p-12 rounded-2xl shadow-2xl text-white text-center border-t-4 border-cyan-400">
+        
+        <!-- HEADER SECTION: Name and Main Title (Humorous Theme) -->
+        <header class="mb-8">
+            <!-- Name is set to Enrique -->
+            <h2 class="text-xl font-bold text-cyan-400 mb-1 tracking-widest uppercase">Enrique's</h2>
+            
+            <h1 class="text-5xl sm:text-7xl font-extrabold leading-none">
+                <!-- Main title changed to a humorous, age-neutral theme -->
+                <span class="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-teal-500">
+                    Latest Software Update <span class="text-white">🎉</span> <!-- Added party emoji as a visual birthday clue -->
+                </span>
+            </h1>
+            <!-- Subtitle changed for a funny touch -->
+            <p class="text-xs uppercase tracking-widest text-gray-400 mt-2">Certified Vintage Edition</p>
+        </header>
+
+        <!-- PROGRESS BAR ELEMENT: New element for thematic humor -->
+        <section class="mb-8 p-4 bg-gray-800 rounded-lg">
+            <p class="text-sm uppercase tracking-wider text-cyan-400 mb-2">Installation Status</p>
+            <div class="w-full bg-gray-700 rounded-full h-4">
+                <!-- Progress is fixed at 99% for a humorous touch -->
+                <div class="bg-cyan-500 h-4 rounded-full" style="width: 99%"></div>
+            </div>
+            <p class="text-xs text-gray-400 mt-1">99% Complete (Requires User Interaction to Finalize)</p>
+        </section>
+
+        <!-- DETAILS SECTION: Date/Time and Location -->
+        <section class="space-y-6">
+            
+            <!-- WHEN: Date & Time Card -->
+            <div class="bg-gray-800 p-6 rounded-xl">
+                <p class="text-sm uppercase tracking-wider text-gray-400 mb-1">When</p>
+                <div class="text-3xl font-bold">
+                    Saturday, Oct 18th
+                </div>
+                <div class="text-xl text-cyan-300 mt-2">
+                    6:00 PM
+                </div>
+            </div>
+
+            <!-- WHERE: Location Card -->
+            <div class="bg-gray-800 p-6 rounded-xl">
+                <p class="text-sm uppercase tracking-wider text-gray-400 mb-1">Where</p>
+                <div class="text-3xl font-bold mb-1">
+                    My Home
+                </div>
+                <!-- Specific address details -->
+                <p class="text-xl font-medium text-cyan-300">
+                    27206 Cotton View Ln, Katy TX
+                </p>
+            </div>
+        </section>
+
+        <!-- FOOTER SECTION: Closing Message and Call-to-Action -->
+        <footer class="mt-10 pt-6 border-t border-gray-800">
+            <!-- New Call-to-Action Button (Now a link to the Google Calendar) -->
+            <a href="https://calendar.app.google/h8LyiJZyA3LkTcdj9" target="_blank" role="button"
+               class="flex justify-center items-center w-full py-3 px-4 bg-cyan-600 hover:bg-cyan-500 text-white font-bold rounded-lg transition duration-150 ease-in-out shadow-lg shadow-cyan-500/50 uppercase tracking-widest">
+                Execute Program (RSVP)
+            </a>
+            <p class="text-sm text-gray-400 mt-4">
+                Can't wait to celebrate the new patch notes!
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
