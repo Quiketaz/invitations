@@ -20,7 +20,7 @@
     <div class="w-full max-w-lg bg-gray-900 p-8 sm:p-12 rounded-2xl shadow-2xl text-white text-center border-t-4 border-cyan-400">
         
         <!-- HEADER SECTION: Name and Main Title (Humorous Theme) -->
-        <header class="mb-6"> <!-- Reduced from mb-8 -->
+        <header class="mb-6">
             <!-- Name is set to Enrique -->
             <h2 class="text-xl font-bold text-cyan-400 mb-1 tracking-widest uppercase">Enrique's</h2>
             
@@ -34,13 +34,31 @@
             <p class="text-xs uppercase tracking-widest text-gray-400 mt-2">Certified Vintage Edition</p>
         </header>
 
-        <!-- PROGRESS BAR ELEMENT: New element for thematic humor -->
-        <section class="mb-6 p-4 bg-gray-800 rounded-lg"> <!-- Reduced mb-8 to mb-6 -->
+        <!-- PROGRESS BAR ELEMENT: New element for thematic humor (Windows Style) -->
+        <section class="mb-6 p-4 bg-gray-800 rounded-lg">
             <p class="text-sm uppercase tracking-wider text-cyan-400 mb-2">Installation Status</p>
-            <div class="w-full bg-gray-700 rounded-full h-4">
-                <!-- Progress is fixed at 99% for a humorous touch -->
-                <div class="bg-cyan-500 h-4 rounded-full" style="width: 99%"></div>
+            
+            <!-- Windows-style segmented progress bar -->
+            <div class="flex items-center space-x-0.5 bg-gray-700 p-0.5 rounded-sm h-4 border border-gray-600">
+                <!-- 14 filled segments for a 99% look -->
+                <div class="flex-1 h-3 bg-cyan-500 shadow-inner rounded-sm"></div>
+                <div class="flex-1 h-3 bg-cyan-500 shadow-inner rounded-sm"></div>
+                <div class="flex-1 h-3 bg-cyan-500 shadow-inner rounded-sm"></div>
+                <div class="flex-1 h-3 bg-cyan-500 shadow-inner rounded-sm"></div>
+                <div class="flex-1 h-3 bg-cyan-500 shadow-inner rounded-sm"></div>
+                <div class="flex-1 h-3 bg-cyan-500 shadow-inner rounded-sm"></div>
+                <div class="flex-1 h-3 bg-cyan-500 shadow-inner rounded-sm"></div>
+                <div class="flex-1 h-3 bg-cyan-500 shadow-inner rounded-sm"></div>
+                <div class="flex-1 h-3 bg-cyan-500 shadow-inner rounded-sm"></div>
+                <div class="flex-1 h-3 bg-cyan-500 shadow-inner rounded-sm"></div>
+                <div class="flex-1 h-3 bg-cyan-500 shadow-inner rounded-sm"></div>
+                <div class="flex-1 h-3 bg-cyan-500 shadow-inner rounded-sm"></div>
+                <div class="flex-1 h-3 bg-cyan-500 shadow-inner rounded-sm"></div>
+                <div class="flex-1 h-3 bg-cyan-500 shadow-inner rounded-sm"></div>
+                <!-- 1 unfilled segment (The remaining 1% that requires "Execute Program") -->
+                <div class="flex-1 h-3 bg-gray-700 rounded-sm"></div>
             </div>
+            
             <p class="text-xs text-gray-400 mt-1">99% Complete (Requires User Interaction to Finalize)</p>
         </section>
 
@@ -48,7 +66,7 @@
         <section class="space-y-6">
             
             <!-- WHEN: Date & Time Card -->
-            <div class="bg-gray-800 p-6 rounded-xl">
+            <div class="bg-gray-800 p-4 rounded-xl">
                 <p class="text-sm uppercase tracking-wider text-gray-400 mb-1">When</p>
                 <div class="text-3xl font-bold">
                     Saturday, Oct 18th
@@ -59,7 +77,7 @@
             </div>
 
             <!-- WHERE: Location Card -->
-            <div class="bg-gray-800 p-6 rounded-xl">
+            <div class="bg-gray-800 p-4 rounded-xl">
                 <p class="text-sm uppercase tracking-wider text-gray-400 mb-1">Where</p>
                 <div class="text-3xl font-bold mb-1">
                     My Home
@@ -72,7 +90,7 @@
         </section>
 
         <!-- FOOTER SECTION: Closing Message and Call-to-Action -->
-        <footer class="mt-8 pt-6 border-t border-gray-800"> <!-- Reduced from mt-10 -->
+        <footer class="mt-8 pt-6 border-t border-gray-800">
             <!-- New Call-to-Action Button (Now a link to the Google Calendar) -->
             <a href="https://calendar.app.google/h8LyiJZyA3LkTcdj9" target="_blank" role="button"
                class="flex justify-center items-center w-full py-3 px-4 bg-cyan-600 hover:bg-cyan-500 text-white font-bold rounded-lg transition duration-150 ease-in-out shadow-lg shadow-cyan-500/50 uppercase tracking-widest">
