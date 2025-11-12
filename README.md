@@ -1,14 +1,19 @@
-# Invitations Repository
+My Invitations Project
+This repository holds the web-based invitations for various personal events.
 
-This repository serves as a collection of digital invitations for various events. Each invitation is typically a standalone web project (HTML/CSS/JS or a React app) designed to be easily shareable via links.
+Each event has its own dedicated folder.
 
-## Structure
+How to View
+The easiest way to see all available invitations is to open the main index file:
 
-The repository is organized to keep different invitations separate and manageable:
+./index.html
 
-invitations/
-├── invites/
-│   ├── welcome-sister-texas/       # Your current HTML invitation
-│   │   └── ... (project files for this invite)
-│   ├── another-event-invite/       # Future invitation projects go here
-│   │   └── ...
+This file acts as a central hub, linking to each individual event invitation.
+
+Event Folders
+
+/thanksgiving/ - Thanksgiving Potluck Dinner
+/enrique-birthday/ - Enrique's Birthday Celebration
+/welcome-sister-texas/ - Welcome Party for my Sister
+
+To view a specific invite, you can navigate into its folder and open the index.html file located inside.
