@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduation Invitation</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 text-white antialiased">
+
+    <!-- Main invitation card container -->
+    <main class="w-full max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 bg-black shadow-2xl shadow-yellow-500/10 rounded-lg overflow-hidden">
+
+        <!-- Left Side: Portrait Image (Updated layout to prevent height collapse) -->
+        <div class="relative h-64 md:h-full min-h-[16rem]">
+            <img src="image/amsy.jpg" 
+                 alt="Amsy Flores Graduation Portrait" 
+                 class="absolute inset-0 w-full h-full object-cover object-center">
+        </div>
+
+        <!-- Right Side: Invitation Details -->
+        <div class="relative p-8 sm:p-10 text-center text-gray-300">
+            
+            <!-- Decorative Elements from Sample -->
+            <div class="absolute inset-x-0 top-0 h-40 opacity-40">
+                <!-- Updated to use a local image since the external URL blocks hotlinking -->
+                <div class="h-full w-full bg-cover bg-top" style="background-image: url('image/string-lights.png');"></div>
+            </div>
+            
+            <div class="relative z-10 flex flex-col h-full">
+                <!-- Header -->
+                <div class="mb-6">
+                    <h1 class="font-script text-6xl text-gold-gradient">Class of 2025</h1>
+                </div>
+
+                <!-- Event Title -->
+                <div class="mb-6">
+                    <p class="text-sm uppercase tracking-widest text-gray-400">Please join us for a</p>
+                    <h2 class="font-serif text-3xl font-bold uppercase tracking-wider text-white mt-2">Graduation Celebration</h2>
+                </div>
+
+                <!-- Honoree -->
+                <div class="mb-8">
+                    <p class="text-sm uppercase tracking-widest text-gray-400 mb-2">Honoring</p>
+                    <!-- Graduation Cap Icon -->
+                    <div class="w-16 h-16 mx-auto mb-2 text-yellow-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 3L1 9L12 15L23 9L12 3ZM5.5 10.31L12 13.41L18.5 10.31L12 7.21L5.5 10.31ZM12 16.5L3 11.5V15.5L12 20.5L21 15.5V11.5L12 16.5Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-script text-5xl text-gold-gradient">Amsy Flores</h3>
+                    <p class="text-sm text-gray-300 mt-2">
+                        Graduate of Paetow High School
+                    </p>
+                </div>
+
+                <!-- Spacer to push details to the bottom -->
+                <div class="flex-grow"></div>
+
+                <!-- Details Section -->
+                <div class="space-y-4 font-serif">
+                    <div>
+                        <p class="text-lg font-bold text-white">SATURDAY, MAY 17TH AT 5:00 PM</p>
+                    </div>
+                    <div>
+                        <p class="text-lg font-bold text-white">OUR HOME</p>
+                        <p class="text-base text-gray-400">27206 COTTON VIEW LN, KATY TX 77493</p>
+                    </div>
+                </div>
+
+                <!-- RSVP -->
+                <div class="mt-8 pt-4 border-t border-gray-700">
+                    <p class="text-sm text-gray-400">RSVP AT 832-674-5401</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
