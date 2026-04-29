@@ -17,167 +17,136 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="min-h-screen flex items-center justify-center p-4 text-white antialiased">
+<body class="h-[100dvh] w-screen overflow-hidden p-2 sm:p-4 text-white antialiased flex items-center justify-center">
 
     <!-- Main invitation card container -->
     <main
-        class="w-full max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 bg-black shadow-2xl shadow-yellow-500/10 rounded-lg overflow-hidden">
+        class="w-full max-w-4xl mx-auto h-full max-h-[95vh] md:max-h-[80vh] grid grid-rows-[40%_60%] md:grid-rows-1 md:grid-cols-2 bg-black shadow-2xl shadow-yellow-500/10 rounded-lg overflow-hidden relative">
 
         <!-- Left Side: Portrait Image (Updated layout to prevent height collapse) -->
-        <div class="relative h-80 md:h-full min-h-[20rem]">
+        <div class="relative h-full w-full">
             <img src="images/amsy.jpg" alt="Amsy Flores Graduation Portrait"
                 class="absolute inset-0 w-full h-full object-cover object-[center_20%] md:object-center">
         </div>
 
         <!-- Right Side: Invitation Details -->
-        <div class="relative p-8 sm:p-10 text-center text-gray-300">
+        <div class="relative p-2 sm:p-4 text-center text-gray-300 flex flex-col h-full overflow-hidden">
 
             <!-- Decorative Elements from Sample -->
-            <div class="absolute inset-x-0 top-0 h-40 opacity-40">
+            <div class="absolute inset-x-0 top-0 h-24 opacity-40 pointer-events-none">
                 <!-- Updated to use a local image since the external URL blocks hotlinking -->
                 <div class="h-full w-full bg-cover bg-top" style="background-image: url('images/string-lights.png');">
                 </div>
             </div>
 
-            <div class="relative z-10 flex flex-col items-center h-full">
+            <div class="relative z-10 flex flex-col items-center justify-between h-full w-full">
                 <!-- Header -->
-                <div class="mb-5 w-full">
-                    <h1 class="font-script text-5xl text-gold-gradient pt-4 pb-2 mt-2 leading-relaxed">Class of 2026
-                    </h1>
+                <div class="mb-1 w-full">
+                    <h1 class="font-script text-3xl text-gold-gradient pt-2 pb-1 mt-1 leading-relaxed">Class of 2026</h1>
                 </div>
 
                 <!-- Event Title -->
-                <div class="mb-5 w-full">
-                    <p class="text-sm uppercase tracking-widest text-gray-400">Please join us for a</p>
-                    <h2 class="font-serif text-4xl font-bold uppercase tracking-[2px] text-white mt-2">Graduation
+                <div class="mb-1 w-full">
+                    <p class="text-[10px] md:text-xs uppercase tracking-widest text-gray-400">Please join us for a</p>
+                    <h2 class="font-serif text-2xl md:text-3xl font-bold uppercase tracking-[2px] text-white mt-1">Graduation
                         Celebration</h2>
                 </div>
 
                 <!-- Honoree -->
-                <div class="mb-5 w-full">
-                    <p class="text-sm uppercase tracking-widest text-gray-400 mb-2">Honoring</p>
+                <div class="mb-2 w-full">
+                    <p class="text-[10px] md:text-xs uppercase tracking-widest text-gray-400 mb-1">Honoring</p>
                     <!-- Graduation Cap Icon -->
-                    <div class="w-16 h-16 mx-auto mb-2 text-[#D4AF37]">
+                    <div class="w-8 h-8 md:w-10 md:h-10 mx-auto mb-1 text-[#D4AF37]">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                             <path
                                 d="M12 3L1 9L12 15L23 9L12 3ZM5.5 10.31L12 13.41L18.5 10.31L12 7.21L5.5 10.31ZM12 16.5L3 11.5V15.5L12 20.5L21 15.5V11.5L12 16.5Z" />
                         </svg>
                     </div>
-                    <h3 class="font-script text-5xl text-gold-gradient pt-4 pb-2 mt-2 leading-relaxed">Amsy Betbirai
-                        Flores Hernandez</h3>
-                    <p class="text-sm text-gray-300 mt-2">
+                    <h3 class="font-script text-3xl md:text-5xl text-gold-gradient pt-2 pb-1 mt-1 leading-relaxed">Amsy Flores</h3>
+               Hernandez</h3>
+                    <p class="text-[10px] md:text-xs text-gray-300 mt-1">
                         Graduate of Paetow High School
                     </p>
                 </div>
 
-                <!-- Spacer to push details to the bottom -->
-                <div class="flex-grow"></div>
-
                 <!-- Details Section -->
-                <div class="space-y-2 font-serif w-full">
-                    <p class="text-lg font-bold text-white tracking-widest">SUNDAY, MAY 17TH AT 5:00 PM</p>
+                <div class="space-y-1 font-serif w-full mb-2">
+                    <p class="text-[10px] md:text-xs font-bold text-white tracking-[0.2em]">SUNDAY, MAY 17TH AT 5:00 PM</p>
                     <div>
-                        <p class="text-xs text-gray-500 uppercase tracking-wider">27206 COTTON VIEW LN, KATY TX 77493
+                        <p class="text-[9px] md:text-[10px] text-gray-500 uppercase tracking-[0.2em] leading-[1.5]">27206 COTTON VIEW LN, KATY TX 77493
                         </p>
-                        <div class="pt-6">
-                            <a href="https://www.google.com/maps/search/?api=1&query=27206+COTTON+VIEW+LN+KATY+TX+77493"
-                                target="_blank"
-                                class="inline-block px-6 py-2 border border-[#D4AF37] text-[#D4AF37] text-xs font-bold tracking-widest uppercase rounded-full hover:bg-[#D4AF37] hover:text-black transition-all duration-300 ease-in-out">
-                                Abrir en Google Maps
-                            </a>
-                        </div>
                     </div>
                 </div>
 
-                <!-- Countdown Timer -->
-                <div id="countdown-timer" class="w-full mt-8 mb-4">
-                    <div class="flex justify-center space-x-4 sm:space-x-8 text-center">
-                        <!-- Days -->
-                        <div>
-                            <span id="days"
-                                class="block font-script text-4xl md:text-5xl text-gold-gradient leading-none">00</span>
-                            <p class="font-serif text-xs text-gray-500 uppercase tracking-widest mt-1">Days</p>
-                        </div>
-                        <!-- Hours -->
-                        <div>
-                            <span id="hours"
-                                class="block font-script text-4xl md:text-5xl text-gold-gradient leading-none">00</span>
-                            <p class="font-serif text-xs text-gray-500 uppercase tracking-widest mt-1">Hrs</p>
-                        </div>
-                        <!-- Minutes -->
-                        <div>
-                            <span id="minutes"
-                                class="block font-script text-4xl md:text-5xl text-gold-gradient leading-none">00</span>
-                            <p class="font-serif text-xs text-gray-500 uppercase tracking-widest mt-1">Min</p>
-                        </div>
-                        <!-- Seconds -->
-                        <div>
-                            <span id="seconds"
-                                class="block font-script text-4xl md:text-5xl text-gold-gradient leading-none">00</span>
-                            <p class="font-serif text-xs text-gray-500 uppercase tracking-widest mt-1">Sec</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- RSVP -->
-                <div class="mt-8 pt-8 border-t border-gray-700 w-full">
-                    <h4 class="font-serif text-white tracking-widest uppercase text-sm mb-6">Confirmar Asistencia</h4>
-
-                    <form id="rsvp-form" class="space-y-4 max-w-xs mx-auto">
-                        <input type="text" name="name" placeholder="Tu Nombre" required
-                            class="w-full bg-transparent border-b border-gray-600 py-2 text-sm focus:border-[#D4AF37] outline-none transition-colors">
-
-                        <select name="guests" required
-                            class="w-full bg-black border-b border-gray-600 py-2 text-sm focus:border-[#D4AF37] outline-none transition-colors text-gray-400">
-                            <option value="" disabled selected>Número de Invitados</option>
-                            <option value="1">1 Persona</option>
-                            <option value="2">2 Personas</option>
-                            <option value="3">3 Personas</option>
-                            <option value="4">4+ Personas</option>
-                        </select>
-
-                        <button type="submit" id="submit-btn"
-                            class="w-full mt-4 px-6 py-2 border border-[#D4AF37] text-[#D4AF37] text-xs font-bold tracking-widest uppercase rounded-full hover:bg-[#D4AF37] hover:text-black transition-all duration-300">
-                            Confirmar RSVP
+                <!-- Action Hub & RSVP -->
+                <div class="w-full pt-2 border-t border-gray-700">
+                    <!-- Action Buttons -->
+                    <div class="flex flex-row justify-center gap-2 w-full max-w-md mx-auto">
+                        <!-- Google Maps (Ghost Button) -->
+                        <a href="https://www.google.com/maps/search/?api=1&query=27206+COTTON+VIEW+LN+KATY+TX+77493"
+                            target="_blank"
+                            class="w-1/2 flex items-center justify-center px-2 py-2 border border-[#D4AF37] text-[#D4AF37] text-[9px] font-bold tracking-[0.2em] uppercase rounded-full hover:bg-[#D4AF37] hover:text-black transition-all duration-300 ease-in-out text-center">
+                            GOOGLE MAPS
+                        </a>
+                        <!-- RSVP Trigger Button (Solid Button) -->
+                        <button id="show-rsvp-btn"
+                            class="w-1/2 flex items-center justify-center px-2 py-2 bg-[#D4AF37] text-black text-[9px] font-bold tracking-[0.2em] uppercase rounded-full hover:opacity-90 transition-all duration-300 ease-in-out text-center">
+                            CONFIRMAR ASISTENCIA
                         </button>
-                    </form>
-
-                    <div id="success-msg" class="hidden mt-4">
-                        <p class="font-script text-3xl text-gold-gradient">¡Gracias por acompañarnos!</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </main>
 
+    <!-- RSVP Modal Overlay (Fixed Absolute Overlay) -->
+    <div id="rsvp-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 p-6">
+        <div class="bg-gray-900 border border-[#D4AF37] p-6 rounded-xl w-full max-w-sm relative shadow-2xl">
+            <button id="close-rsvp-btn" class="absolute top-3 right-4 text-gray-400 hover:text-white font-bold text-2xl leading-none">&times;</button>
+            <h4 class="font-serif text-white tracking-[0.2em] uppercase text-xs mb-6 text-center">Confirmar Asistencia</h4>
+
+            <form id="rsvp-form" class="space-y-4">
+                <input type="text" name="name" placeholder="Tu Nombre" required
+                    class="w-full bg-transparent border-b border-gray-600 py-2 text-sm focus:border-[#D4AF37] outline-none transition-colors">
+
+                <select name="guests" required
+                    class="w-full bg-gray-900 border-b border-gray-600 py-2 text-sm focus:border-[#D4AF37] outline-none transition-colors text-gray-400">
+                    <option value="" disabled selected>Número de Invitados</option>
+                    <option value="1">1 Persona</option>
+                    <option value="2">2 Personas</option>
+                    <option value="3">3 Personas</option>
+                    <option value="4">4+ Personas</option>
+                </select>
+
+                <button type="submit" id="submit-btn"
+                    class="w-full mt-6 px-6 py-3 bg-[#D4AF37] text-black text-[10px] font-bold tracking-[0.2em] uppercase rounded-full hover:opacity-90 transition-all duration-300">
+                    Confirmar RSVP
+                </button>
+            </form>
+
+            <div id="success-msg" class="hidden mt-6 text-center">
+                <p class="font-script text-3xl text-gold-gradient">¡Gracias por acompañarnos!</p>
+            </div>
+        </div>
+    </div>
+
     <script>
-        // Set the date we're counting down to
-        const targetDate = new Date("May 17, 2026 17:00:00").getTime();
+        // RSVP Modal Toggle Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const showRsvpBtn = document.getElementById('show-rsvp-btn');
+            const rsvpModal = document.getElementById('rsvp-modal');
+            const closeRsvpBtn = document.getElementById('close-rsvp-btn');
 
-        // Update the count down every 1 second
-        const countdownInterval = setInterval(function () {
-            const now = new Date().getTime();
-            const distance = targetDate - now;
+            showRsvpBtn.addEventListener('click', () => {
+                rsvpModal.classList.remove('opacity-0', 'pointer-events-none');
+                rsvpModal.classList.add('opacity-100', 'pointer-events-auto');
+            });
 
-            // Time calculations
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Display the result, padding with a '0' if the number is less than 10
-            document.getElementById("days").innerHTML = String(days).padStart(2, '0');
-            document.getElementById("hours").innerHTML = String(hours).padStart(2, '0');
-            document.getElementById("minutes").innerHTML = String(minutes).padStart(2, '0');
-            document.getElementById("seconds").innerHTML = String(seconds).padStart(2, '0');
-
-            // If the count down is finished, display a message
-            if (distance < 0) {
-                clearInterval(countdownInterval);
-                document.getElementById("countdown-timer").innerHTML = `<p class="font-serif text-2xl text-gold-gradient">The celebration has begun!</p>`;
-            }
-        }, 1000);
+            closeRsvpBtn.addEventListener('click', () => {
+                rsvpModal.classList.add('opacity-0', 'pointer-events-none');
+                rsvpModal.classList.remove('opacity-100', 'pointer-events-auto');
+            });
+        });
     </script>
     <script>
         // Lógica para enviar a Google Sheets
