@@ -66,8 +66,7 @@
                 <div class="mb-1 w-full">
                     <p class="text-[10px] md:text-xs uppercase tracking-widest text-gray-400">Please join us for a</p>
                     <h2 class="font-serif text-2xl md:text-3xl font-bold uppercase tracking-[2px] text-white mt-1">
-                        Graduation
-                        Celebration</h2>
+                        Graduation Celebration</h2>
                 </div>
 
                 <!-- Honoree -->
@@ -80,7 +79,7 @@
                                 d="M12 3L1 9L12 15L23 9L12 3ZM5.5 10.31L12 13.41L18.5 10.31L12 7.21L5.5 10.31ZM12 16.5L3 11.5V15.5L12 20.5L21 15.5V11.5L12 16.5Z" />
                         </svg>
                     </div>
-                    <h3 class="font-script text-3xl md:text-5xl text-gold-gradient pt-2 pb-1 mt-1 leading-relaxed">Amsy
+                    <h3 class="font-script text-3xl md:text-6xl text-gold-gradient pt-2 pb-1 mt-1 leading-relaxed">Amsy
                         Flores Hernandez</h3>
                     <p class="text-[10px] md:text-xs text-gray-300 mt-1">
                         Graduate of Paetow High School
@@ -89,7 +88,7 @@
 
                 <!-- Details Section -->
                 <div class="space-y-1 font-serif w-full mb-2">
-                    <p class="text-[10px] md:text-xs font-bold text-white tracking-[0.2em]">SUNDAY, MAY 17TH AT 5:00 PM
+                    <p class="text-[10px] md:text-xs font-bold text-white tracking-[0.2em]">SUNDAY, MAY 17TH AT 3:30 PM
                     </p>
                     <div>
                         <p class="text-[9px] md:text-[10px] text-gray-500 uppercase tracking-[0.2em] leading-[1.5]">
@@ -111,7 +110,7 @@
                         <!-- RSVP Trigger Button (Solid Button) -->
                         <button id="show-rsvp-btn"
                             class="w-1/2 flex items-center justify-center px-2 py-2 bg-[#D4AF37] text-black text-[9px] font-bold tracking-[0.2em] uppercase rounded-full hover:opacity-90 transition-all duration-300 ease-in-out text-center">
-                            CONFIRMAR ASISTENCIA
+                            RSVP
                         </button>
                     </div>
                 </div>
@@ -125,20 +124,19 @@
         <div class="bg-gray-900 border border-[#D4AF37] p-6 rounded-xl w-full max-w-sm relative shadow-2xl">
             <button id="close-rsvp-btn"
                 class="absolute top-3 right-4 text-gray-400 hover:text-white font-bold text-2xl leading-none">&times;</button>
-            <h4 class="font-serif text-white tracking-[0.2em] uppercase text-xs mb-6 text-center">Confirmar Asistencia
-            </h4>
+            <h4 class="font-serif text-white tracking-[0.2em] uppercase text-xs mb-6 text-center">Confirm Attendance</h4>
 
             <form id="rsvp-form" class="space-y-4">
-                <input type="text" name="name" placeholder="Tu Nombre" required
+                <input type="text" name="name" placeholder="Name" required
                     class="w-full bg-transparent border-b border-gray-600 py-2 text-sm focus:border-[#D4AF37] outline-none transition-colors">
 
                 <select name="guests" required
                     class="w-full bg-gray-900 border-b border-gray-600 py-2 text-sm focus:border-[#D4AF37] outline-none transition-colors text-gray-400">
-                    <option value="" disabled selected>Número de Invitados</option>
-                    <option value="1">1 Persona</option>
-                    <option value="2">2 Personas</option>
-                    <option value="3">3 Personas</option>
-                    <option value="4">4+ Personas</option>
+                    <option value="" disabled selected>Guests Number</option>
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4+ Guests</option>
                 </select>
 
                 <button type="submit" id="submit-btn"
@@ -148,7 +146,7 @@
             </form>
 
             <div id="success-msg" class="hidden mt-6 text-center">
-                <p class="font-script text-3xl text-gold-gradient">¡Gracias por acompañarnos!</p>
+                <p class="font-script text-3xl text-gold-gradient">Thank you for joining us!</p>
             </div>
         </div>
     </div>
