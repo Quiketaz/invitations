@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josue's 15th Birthday Invitation</title>
+    <meta property="og:title" content="Josue's 15th Birthday Invitation">
+    <meta property="og:description" content="Join us for a refined celebration of Josue's 15th birthday on April 25.">
+    <meta property="og:image" content="images/soccer_field_background.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Montserrat:wght@400;700&family=Great+Vibes:wght@400&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+    <main class="invite-container">
+        <article class="invite">
+            <header class="invite-header">
+                <p class="invite-eyebrow">You're invited</p>
+                <div class="marquee-number" aria-hidden="true">
+                    <span class="number-bulbs">15</span>
+                    <span class="number-structure">15</span>
+                </div>
+                <h1 class="invite-title"><span class="script-name">Josue</span></h1>
+                <p class="invite-subtitle">A thoughtful evening celebration with family and close friends.</p>
+            </header>
+
+            <section class="summary-card">
+                <div class="summary-time">April 25 · 6:00 PM</div>
+                <p class="summary-note">Forecast: warm afternoon, cooler evening. Smart casual recommended.</p>
+            </section>
+
+            <section class="details-grid">
+                <div class="detail-card">
+                    <h2>Location</h2>
+                    <p>27206 Cotton View Ln<br>Katy, TX 77493</p>
+                    <a class="action-button" href="https://www.google.com/maps/place/27206+Cotton+View+Ln,+Katy,+TX+77493" target="_blank" aria-label="Get directions">Get Directions</a>
+                </div>
+
+                <div class="detail-card">
+                    <h2>RSVP</h2>
+                    <p>Please confirm attendance in advance.</p>
+                    <a class="action-button secondary" href="https://wa.me/18326745401?text=RSVP%20for%20Josue's%20Birthday!" target="_blank" aria-label="RSVP via WhatsApp">RSVP on WhatsApp</a>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <div class="cta-content">
+                    <div class="cta-main">
+                        <h2>Confirm Your Attendance</h2>
+                        <p>Let us know you're coming!</p>
+                    </div>
+                    <div class="cta-buttons">
+                        <a class="cta-button primary" href="https://wa.me/18326745401?text=RSVP%20for%20Josue's%20Birthday!" target="_blank" aria-label="RSVP via WhatsApp">💬 WhatsApp</a>
+                        <a class="cta-button" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NHBpaWlqbmwwazR2aG9jcnBrZW5iMW5ybjQgZmFtaWx5MDcxOTQ5Mzk5MDU2OTU1NjE1MTNAZw&tmsrc=family07194939905695561513%40group.calendar.google.com" target="_blank" aria-label="Add to Calendar">📅 Add to Calendar</a>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="invite-footer">
+                <p>Add this event to your calendar for easy planning.</p>
+                <a class="calendar-link" target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NHBpaWlqbmwwazR2aG9jcnBrZW5iMW5ybjQgZmFtaWx5MDcxOTQ5Mzk5MDU2OTU1NjE1MTNAZw&tmsrc=family07194939905695561513%40group.calendar.google.com" aria-label="Add to Calendar">Add to Google Calendar</a>
+            </footer>
+        </article>
+    </main>
+    <script>
+        // Premium entrance animations with GSAP
+        const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+        // Initialize elements with hidden state
+        gsap.set(".marquee-number", { opacity: 0 });
+        gsap.set(".script-name", { opacity: 0, y: 20 });
+        gsap.set(".summary-card", { opacity: 0, y: 30 });
+        gsap.set(".detail-card", { opacity: 0, y: 30 });
+        gsap.set(".cta-section", { opacity: 0, y: 30 });
+
+        // Marquee flicker effect (simulating sign turning on)
+        tl.to(".marquee-number", {
+            opacity: 1,
+            duration: 0.1,
+            yoyo: true,
+            repeat: 5,
+            ease: "none"
+        }, 0);
+
+        // Stabilize marquee after flicker
+        tl.to(".marquee-number", {
+            opacity: 1,
+            duration: 0.3
+        }, 0.6);
+
+        // Script name fades in and slides up after marquee stabilizes
+        tl.to(".script-name", {
+            opacity: 1,
+            y: 0,
+            duration: 0.7
+        }, 0.9);
+
+        // Summary card slides in from bottom
+        tl.to(".summary-card", {
+            opacity: 1,
+            y: 0,
+            duration: 0.6
+        }, 1.3);
+
+        // Detail cards stagger entrance
+        tl.to(".detail-card", {
+            opacity: 1,
+            y: 0,
+            duration: 0.6,
+            stagger: 0.15
+        }, 1.7);
+
+        // CTA section slides in last
+        tl.to(".cta-section", {
+            opacity: 1,
+            y: 0,
+            duration: 0.6
+        }, 2.1);
+    </script></body>
+
+</html>

@@ -19,6 +19,7 @@ This file acts as a central hub, linking to each individual event invitation.
 | `/enrique-birthday/` | Enrique's Birthday Celebration |
 | `/welcome-sister-texas/` | Welcome Party for my Sister |
 | `/amsy-graduation-dinner/` | Amsy's Graduation Dinner |
+| `/josues-birthday-invite/` | Josue's Birthday Celebration |
 
 To view a specific invite, you can navigate into its folder and open the `index.html` file located inside.
 
